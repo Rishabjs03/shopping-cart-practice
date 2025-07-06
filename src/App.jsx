@@ -1,9 +1,10 @@
-import './App.css'
-
+import ProductList from "./components/ProductList";
+import Cart from "./components/Cart";
 export default function App() {
   return (
     <main>
-      React ⚛️ + Vite ⚡ + Replit
+      <Cart />
+      <ProductList />
     </main>
-  )
+  );
 }
