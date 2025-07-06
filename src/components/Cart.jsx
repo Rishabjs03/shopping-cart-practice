@@ -10,8 +10,8 @@ export default function Cart() {
   function handleIncrease(id) {
     setCart((prevCart) =>
       prevCart.map((item) =>
-        item.id === id ? { ...item, quantity: item.quantity + 1 } : item,
-      ),
+        item.id === id ? { ...item, quantity: item.quantity + 1 } : item
+      )
     );
   }
 
@@ -20,8 +20,8 @@ export default function Cart() {
       prevCart.map((item) =>
         item.id === id && item.quantity > 1
           ? { ...item, quantity: item.quantity - 1 }
-          : item,
-      ),
+          : item
+      )
     );
   }
 
@@ -44,7 +44,7 @@ export default function Cart() {
                   style={{ width: "30px", textAlign: "center" }}
                 />
                 <button onClick={() => handleDecrease(item.id)}>-</button>
-                <button onClick={() => handleDelete(item.id)}>Remove</button>
+                <button onClick={() => handleDelete(item.id)}>yooo</button>
               </span>
             </li>
           ))}
